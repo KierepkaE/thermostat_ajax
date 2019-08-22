@@ -11,14 +11,17 @@ body {
 
 .low-usage {
     color: green;
+    text-shadow: 2px 1px green;
 }
 
 .medium-usage {
     color: black;
+    text-shadow: 2px 1px black;
 }
 
 .high-usage {
     color: red;
+    text-shadow: 2px 1px red;
 }
 
 #temperature {
