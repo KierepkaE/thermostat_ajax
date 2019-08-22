@@ -28,6 +28,10 @@ body {
     padding: 30px
 }
 
+#power-saving-status {
+    color: rgb(128, 0, 128);
+}
+
 button,
 form input {
     color: rgb(128, 0, 128);
@@ -40,4 +44,13 @@ form input {
     display: inline-block;
     font-size: 20px;
     margin: 4px 2px;
+}
+
+.style_btn {
+    margin: 40px
+}
+
+#temp-up:hover,
+#temp-down:hover {
+    font-size: 22px;
 }
