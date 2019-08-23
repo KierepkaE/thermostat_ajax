@@ -7,7 +7,6 @@ $(document).ready(() => {
   thermostat.temperature = parseInt(temp, 10);
 
   if (psm === " off ") {
-    console.log("this loop is running");
     thermostat.powerSavingMode = false;
   } else {
     console.log("else");

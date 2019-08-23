@@ -7,15 +7,12 @@ class Thermostat < Sinatra::Base
   get '/' do
 
     if session[:temperature] == nil
-      p "making the default temperature 20"
       @temperature = "20"
     else
       @temperature = session[:temperature]
     end
 
-    p "power saving mode is"
-    p session[:powerSavingMode]
-    
+
     if session[:powerSavingMode] == nil
       @powerSavingMode = 'on'
     else
@@ -28,7 +25,7 @@ class Thermostat < Sinatra::Base
   post '/temperature' do
     session[:temperature] = params[:temperature]
     session[:powerSavingMode] = params[:powerSavingMode]
-    p params
+
 
   end
 
